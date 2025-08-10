@@ -30,17 +30,22 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       padding: 2rem;
+      gap: 2rem;
     }
     .hero img {
-      width: 70%; /* Reduced to 70% for ~30% smaller */
+      width: 70%; /* Fixed to 70% of container for ~30% smaller */
+      max-width: 500px; /* Prevents it from getting too big on large screens */
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      display: block;
     }
     .hero-text {
       flex: 1 1 400px;
       padding: 1rem 2rem;
+      max-width: 500px;
     }
     .hero-text h2 {
       font-size: 2.5rem;
