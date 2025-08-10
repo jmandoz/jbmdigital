@@ -3,25 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JBM Digital LLC</title>
+  <title>JBM Digital</title>
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 2rem; }
-    header { text-align: center; }
-    .project { margin-bottom: 2rem; }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+    }
+    header h1 {
+      font-size: 1.2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 2rem;
+    }
+    .hero img {
+      max-width: 100%;
+      flex: 1 1 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .hero-text {
+      flex: 1 1 400px;
+      padding: 1rem 2rem;
+    }
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .button {
+      background-color: #a78bfa;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 4rem 2rem;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .section p {
+      max-width: 600px;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+    .features {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .feature {
+      flex: 1 1 250px;
+    }
+    .feature h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>JBM Digital LLC</h1>
-    <p>iOS App Development & Digital Solutions</p>
+    <h1>JBM Digital</h1>
+    <nav>
+      <a href="#">Menu</a>
+    </nav>
   </header>
-  <section>
-    <h2>Portfolio</h2>
-    <div class="project">
-      <h3>PlusEV</h3>
-      <p>iOS sports betting companion app featuring odds comparisons and bankroll tracking.</p>
+
+  <section class="hero">
+    <img src="Screenshot-2025-07-24.png" alt="PlusEV App Screenshot" />
+    <div class="hero-text">
+      <h2>Join the Future</h2>
+      <p>JBM Digital is where creativity meets technology. Our innovative software is crafted to enhance user experiences and facilitate learning.</p>
+      <a href="#" class="button">Discover More</a>
     </div>
-    <!-- Add more projects here -->
   </section>
+
+  <section class="section" style="background-color:#000;">
+    <h2>Why Choose JBM?</h2>
+    <p>Our Core Offerings<br>Explore the best of software development with us. We prioritize quality and user satisfaction in every project.</p>
+    <a href="#" class="button">Get Started</a>
+
+    <div class="features" style="margin-top:3rem;">
+      <div class="feature">
+        <h3>🌐 User-Centric</h3>
+        <p>Our products are designed with the user in mind, ensuring ease of use and functionality for diverse audiences.</p>
+      </div>
+      <div class="feature">
+        <h3>💡 Innovative Designs</h3>
+        <p>Stay ahead in technology with our innovative software that adapts to the needs of modern users.</p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
